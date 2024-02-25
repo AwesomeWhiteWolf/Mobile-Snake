@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mobile Snake</title>
+</head>
+
+<body onTouchStart="touchStart(event)"
+onTouchMove="touchMove(event)"
+onTouchEnd="touchEnd()">
+    <!-- <script>
+        var startingX, startingY, movingX, movingY;
+        function touchStart(e){
+            startingX = e.touches[0].clientX;
+            startingY = e.touches[0].clientY;
+        }
+        function touchMove(e){
+            movingX = e.touches[0].clientX;
+            movingY = e.touches[0].clientY;
+        }
+        function touchEnd() {
+            if(startingX+100 < movingX) {
+                console.log("R");
+            } else if(startingX-100 > movingX) {
+                console.log("L");
+            }
+            if(startingY+100 < movingY) {
+                console.log("D");
+            } else if(startingY-100 > movingY) {
+                console.log("U");
+            }
+        }
+    </script> -->
+
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span class="high-score">High Score: 0</span>
+        </div>
+
+        <div class="play-board"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
