@@ -148,7 +148,7 @@ const initGame = () => {
         scoreSave();
     }
     if(snakeX === foodX && snakeY === foodY) {
-        if (Math.floor(Math.random() * 4) == 0) {
+        if (Math.floor(Math.random() * 3) == 0) {
             blocks.shift();
         }
         updateFoodPosition();
