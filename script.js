@@ -29,17 +29,17 @@ function touchMove(e){
     movingY = e.touches[0].clientY;
 }
 function touchEnd() {
-    if(startingX+100 < movingX && velocityX != -1) {//r
+    if(startingX+70 < movingX && velocityX != -1) {//r
         velocityX = 1;
         velocityY = 0;
-    } else if(startingX-100 > movingX && velocityX != 1) {//l
+    } else if(startingX-70 > movingX && velocityX != 1) {//l
         velocityX = -1;
         velocityY = 0;
     }
-    else if(startingY+100 < movingY && velocityY != -1) {//d
+    else if(startingY+70 < movingY && velocityY != -1) {//d
         velocityX = 0;
         velocityY = 1;
-    } else if(startingY-100 > movingY && velocityY != 1) {//u
+    } else if(startingY-70 > movingY && velocityY != 1) {//u
         velocityX = 0;
         velocityY = -1;
     }
